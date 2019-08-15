@@ -1,7 +1,7 @@
 #Script to compare current IP with old IP and sends Slack notification if different (and do nothing if there was no change).
 #We can put this as a scheduled task to run daily.
 #ScriptName: IP_change_detection_notification.ps1
-
+mkdir "C:\code"
 $slackWebhookUrl = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" #put yours here
 $ipDetectionUrl = "https://wtfismyip.com/text"
 $IPAddFile = "C:\code\IP_change_detection_notification.dat" #absolute path to file that stores the old IP record
